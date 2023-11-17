@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/add1PointTeam02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1 Points"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="@+id/add2PointTeam02"
+        app:layout_constraintStart_toStartOf="@+id/add2PointTeam02"
+        app:layout_constraintTop_toBottomOf="@+id/add2PointTeam02" />
+
+    <Button
+        android:id="@+id/add2PointTeam02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 Points"
+        app:layout_constraintBottom_toTopOf="@+id/add1PointTeam02"
+        app:layout_constraintEnd_toEndOf="@+id/add3PointTeam02"
+        app:layout_constraintStart_toStartOf="@+id/add3PointTeam02"
+        app:layout_constraintTop_toBottomOf="@+id/add3PointTeam02" />
+
+    <Button
+        android:id="@+id/add3PointTeam02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 Points"
+        app:layout_constraintBottom_toTopOf="@+id/add2PointTeam02"
+        app:layout_constraintEnd_toEndOf="@+id/allPointTeam02"
+        app:layout_constraintStart_toStartOf="@+id/allPointTeam02"
+        app:layout_constraintTop_toBottomOf="@+id/allPointTeam02" />
+
+    <Button
+        android:id="@+id/add2PointTeam01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 Points"
+        app:layout_constraintBottom_toTopOf="@+id/add1PointTeam01"
+        app:layout_constraintEnd_toEndOf="@+id/add3PointTeam01"
+        app:layout_constraintStart_toStartOf="@+id/add3PointTeam01"
+        app:layout_constraintTop_toBottomOf="@+id/add3PointTeam01" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        app:cardBackgroundColor="@color/material_dynamic_neutral30"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 01"
+        app:layout_constraintBottom_toTopOf="@+id/allPointTeam01"
+        app:layout_constraintEnd_toStartOf="@+id/cardView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 02"
+        app:layout_constraintBottom_toTopOf="@+id/allPointTeam02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/allPointTeam01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/add3PointTeam01"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/allPointTeam02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/add3PointTeam02"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/add3PointTeam01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 Points"
+        app:layout_constraintBottom_toTopOf="@+id/add2PointTeam01"
+        app:layout_constraintEnd_toEndOf="@+id/allPointTeam01"
+        app:layout_constraintStart_toStartOf="@+id/allPointTeam01"
+        app:layout_constraintTop_toBottomOf="@+id/allPointTeam01" />
+
+    <Button
+        android:id="@+id/add1PointTeam01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1 Points"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toEndOf="@+id/add2PointTeam01"
+        app:layout_constraintStart_toStartOf="@+id/add2PointTeam01"
+        app:layout_constraintTop_toBottomOf="@+id/add2PointTeam01" />
+</androidx.constraintlayout.widget.ConstraintLayout>
